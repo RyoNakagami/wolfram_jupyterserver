@@ -66,3 +66,7 @@ docker run \
   --volume $PWD:/home/docker/work \
   ryonak/wolfram-jupyterserver:latest
 ```
+
+## Documentation
+
+For more info, please check [this Documentation](https://ryonakagami.github.io/2023/03/09/wolfram-engine-setup/), written in Japanese

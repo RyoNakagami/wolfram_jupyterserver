@@ -1,22 +1,6 @@
+# install apt packages
 ARG BASE_IMAGE=wolframresearch/wolframengine
 FROM ${BASE_IMAGE} as base
-
-SHELL [ "/bin/bash", "-c" ]
-
-FROM base as builder
-
-USER root
-
-ENV TZ=Asia/Tokyo
-RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone && \
-    apt-get -qq -y update && \
-    apt-get -qq -y install \
-      software-properties-common \
-      wget curl \ 
-      make nodejs build-essential libssl-dev zlib1g-dev libbz2-dev \
-      libreadline-dev libsqlite3-dev wget curl llvm libncurses5-dev \
-      libncursesw5-dev xz-utils tk-dev libffi-dev liblzma-dev git
-FROM base
 
 USER root
 
