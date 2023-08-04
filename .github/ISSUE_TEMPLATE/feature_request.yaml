@@ -43,7 +43,7 @@ body:
       description: >
         Please describe how the new feature would be implemented, using psudocode if relevant.
       placeholder: >
-      ...
+        Write a feature/features tha you want 
     validations:
       required: true
   - type: textarea
