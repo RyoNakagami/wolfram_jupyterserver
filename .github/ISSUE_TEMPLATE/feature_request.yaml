@@ -1,0 +1,62 @@
+name: Feature Request
+description: Suggest an idea for xxxxxx
+title: "ENH: "
+labels: [enhancement]
+
+body:
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Feature Type
+      description: Please check what type of feature request you would like to propose.
+      options:
+        - label: >
+            Adding new functionality to xxx
+        - label: >
+            Changing existing functionality in xxx
+        - label: >
+            Removing existing functionality in xxx
+  - type: textarea
+    id: description
+    attributes:
+      label: Goal Description
+      description: >
+        Please describe what problem the feature would solve, e.g. "I wish I could use xxxxxx to ..."
+      placeholder: >
+    validations:
+      required: true
+  - type: textarea
+    id: background_description
+    attributes:
+      label: Why Important?
+      description: >
+        Please describe how important the feature would be or background, e.g. "It could solve"
+      placeholder: >
+    validations:
+      required: true
+  - type: textarea
+    id: feature
+    attributes:
+      label: Feature Description
+      description: >
+        Please describe how the new feature would be implemented, using psudocode if relevant.
+      placeholder: >
+    validations:
+      required: true
+  - type: textarea
+    id: solution
+    attributes:
+      label: Solutions
+      description: >
+        Please describe any solution (existing functionality, 3rd party package, etc.)
+        that would satisfy the feature request.
+      placeholder: >
+        Write a custom function to return a Series when possible.
+           ...
+  - type: textarea
+    id: context
+    attributes:
+      label: Additional Context
+      description: >
+        Please provide any relevant GitHub issues, code examples or references that help describe and support
+        the feature request.
