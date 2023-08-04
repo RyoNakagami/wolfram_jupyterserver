@@ -23,6 +23,7 @@ body:
       description: >
         Please describe what problem the feature would solve, e.g. "I wish I could use xxxxxx to ..."
       placeholder: >
+        I wish I could use xxxxxx to do yyyy when possible.
     validations:
       required: true
   - type: textarea
@@ -32,6 +33,7 @@ body:
       description: >
         Please describe how important the feature would be or background, e.g. "It could solve"
       placeholder: >
+        It could solve xxxx
     validations:
       required: true
   - type: textarea
