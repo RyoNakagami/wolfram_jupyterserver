@@ -54,7 +54,6 @@ body:
         that would satisfy the feature request.
       placeholder: >
         Write a custom function to return a Series when possible.
-           ...
   - type: textarea
     id: context
     attributes:
