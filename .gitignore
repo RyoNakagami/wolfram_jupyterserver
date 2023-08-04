@@ -4,6 +4,10 @@
 sandbox/
 tmp/
 
+# Sensitive
+.gpg
+.config/
+
 # Envrionments
 .env
 .venv
